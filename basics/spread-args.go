@@ -6,7 +6,8 @@ func Sum(args ...int) (result int) {
 	for _, num := range args {
 		result += num
 	}
-	return result
+	// knows to return the predefined returned variable.  Helps not to return mutated* variable
+	return
 }
 
 func main() {
